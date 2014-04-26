@@ -19,6 +19,7 @@
 		500D71E6190C35240028C269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500D71CE190C35240028C269 /* UIKit.framework */; };
 		500D71EE190C35240028C269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 500D71EC190C35240028C269 /* InfoPlist.strings */; };
 		500D71F0190C35240028C269 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 500D71EF190C35240028C269 /* ToDoListTests.m */; };
+		500D71FA190C3AF80028C269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500D71F9190C3AF80028C269 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		500D71EB190C35240028C269 /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
 		500D71ED190C35240028C269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		500D71EF190C35240028C269 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		500D71F9190C3AF80028C269 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				500D71D9190C35240028C269 /* atsAppDelegate.h */,
 				500D71DA190C35240028C269 /* atsAppDelegate.m */,
+				500D71F9190C3AF80028C269 /* Main.storyboard */,
 				500D71DC190C35240028C269 /* Images.xcassets */,
 				500D71D1190C35240028C269 /* Supporting Files */,
 			);
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500D71FA190C3AF80028C269 /* Main.storyboard in Resources */,
 				500D71D5190C35240028C269 /* InfoPlist.strings in Resources */,
 				500D71DD190C35240028C269 /* Images.xcassets in Resources */,
 			);
