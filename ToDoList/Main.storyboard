@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New to-do item." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FiD-X9-rcI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New to-do item." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FiD-X9-rcI">
                                 <rect key="frame" x="20" y="158" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -24,6 +24,11 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FiD-X9-rcI" secondAttribute="trailing" constant="20" id="AYL-7E-RvI"/>
+                            <constraint firstItem="FiD-X9-rcI" firstAttribute="top" secondItem="ryX-3S-N5R" secondAttribute="bottom" constant="138" id="mRu-kq-Fko"/>
+                            <constraint firstItem="FiD-X9-rcI" firstAttribute="leading" secondItem="bOg-6h-Ts9" secondAttribute="leading" constant="20" id="pAA-J4-WSJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvE-jI-SGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
