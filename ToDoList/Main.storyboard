@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Table View Controller - My To-Do List-->
         <scene sceneID="1oq-eT-7Bg">
             <objects>
                 <tableViewController id="FVL-LM-DUv" sceneMemberID="viewController">
@@ -125,7 +125,9 @@
                             <outlet property="delegate" destination="FVL-LM-DUv" id="5nf-Ef-sFN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ixe-p9-Nwv"/>
+                    <navigationItem key="navigationItem" title="My To-Do List" id="Ixe-p9-Nwv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Wd-I4-oXP"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgc-go-zRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
