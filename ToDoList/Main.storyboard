@@ -126,7 +126,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My To-Do List" id="Ixe-p9-Nwv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Wd-I4-oXP"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Wd-I4-oXP">
+                            <connections>
+                                <segue destination="OkW-Nb-0G6" kind="push" id="frV-he-l3p"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgc-go-zRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,10 +159,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="FiD-X9-rcI" secondAttribute="trailing" constant="20" id="AYL-7E-RvI"/>
-                            <constraint firstItem="FiD-X9-rcI" firstAttribute="top" secondItem="ryX-3S-N5R" secondAttribute="bottom" constant="138" id="mRu-kq-Fko"/>
+                            <constraint firstItem="FiD-X9-rcI" firstAttribute="top" secondItem="ryX-3S-N5R" secondAttribute="bottom" constant="94" id="mRu-kq-Fko"/>
                             <constraint firstItem="FiD-X9-rcI" firstAttribute="leading" secondItem="bOg-6h-Ts9" secondAttribute="leading" constant="20" id="pAA-J4-WSJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XBD-Z3-8HV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvE-jI-SGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
