@@ -128,7 +128,7 @@
                     <navigationItem key="navigationItem" title="My To-Do List" id="Ixe-p9-Nwv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Wd-I4-oXP">
                             <connections>
-                                <segue destination="OkW-Nb-0G6" kind="push" id="frV-he-l3p"/>
+                                <segue destination="FlD-Rt-t58" kind="modal" id="frV-he-l3p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -137,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="226" y="66"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Add To-Do Item-->
         <scene sceneID="bFZ-cD-aPZ">
             <objects>
                 <viewController id="OkW-Nb-0G6" sceneMemberID="viewController">
@@ -149,7 +149,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New to-do item." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FiD-X9-rcI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New to-do item." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FiD-X9-rcI">
                                 <rect key="frame" x="20" y="158" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -159,15 +159,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="FiD-X9-rcI" secondAttribute="trailing" constant="20" id="AYL-7E-RvI"/>
-                            <constraint firstItem="FiD-X9-rcI" firstAttribute="top" secondItem="ryX-3S-N5R" secondAttribute="bottom" constant="94" id="mRu-kq-Fko"/>
+                            <constraint firstItem="FiD-X9-rcI" firstAttribute="top" secondItem="ryX-3S-N5R" secondAttribute="bottom" constant="138" id="mRu-kq-Fko"/>
                             <constraint firstItem="FiD-X9-rcI" firstAttribute="leading" secondItem="bOg-6h-Ts9" secondAttribute="leading" constant="20" id="pAA-J4-WSJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XBD-Z3-8HV"/>
+                    <toolbarItems>
+                        <barButtonItem id="jRS-et-P3l"/>
+                        <barButtonItem id="hBx-x1-qkk"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Add To-Do Item" id="XBD-Z3-8HV">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="bjp-UQ-D99"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="aeg-ch-QdL"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvE-jI-SGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="69"/>
+            <point key="canvasLocation" x="1196" y="69"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VpF-AK-BPD">
@@ -186,6 +194,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fy-AM-2Kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-300" y="66"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C4c-UA-kt1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlD-Rt-t58" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3q8-sJ-RjF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OkW-Nb-0G6" kind="relationship" relationship="rootViewController" id="PZ0-vT-9Y5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qde-MX-w9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="69"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
