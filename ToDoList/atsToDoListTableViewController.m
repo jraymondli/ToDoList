@@ -6,9 +6,12 @@
 //
 //
 
+#import "atsToDoItem.h"
 #import "atsToDoListTableViewController.h"
 
 @interface atsToDoListTableViewController ()
+
+@property NSMutableArray *toDoItems;
 
 @end
 
@@ -27,9 +30,25 @@
     return self;
 }
 
+- (void) loadInitialData {
+    atsToDoItem *item1 = [[atsToDoItem alloc] init];
+    item1.itemName = @"Buy milk";
+    [self.toDoItems addObject:item1];
+    
+    atsToDoItem *item2 = [[atsToDoItem alloc] init];
+    item2.itemName = @"Buy eggs";
+    [self.toDoItems addObject:item2];
+    
+    atsToDoItem *item3 = [[atsToDoItem alloc] init];
+    item3.itemName = @"Read a book";
+    [self.toDoItems addObject:item3];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,30 +65,29 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+
+- (NSInteger)numberOfSectionsInTableView: (UITableView *) tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection: (NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.toDoItems count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString * CellIdentifier = @"ListPrototypeCell";
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    atsToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = toDoItem.itemName;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

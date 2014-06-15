@@ -10,25 +10,11 @@
 
 @interface atsAddToDoItemViewController ()
 
-@property NSMutableArray *toDoItems;
-
 @end
 
 @implementation atsAddToDoItemViewController
 
-- (void) loadInitialData {
-    atsToDoItem *item1 = [[atsToDoItem alloc] init];
-    item1.itemName = @"Buy milk";
-    [self.toDoItems addObject:item1];
-    
-    atsToDoItem *item2 = [[atsToDoItem alloc] init];
-    item2.itemName = @"Buy eggs";
-    [self.toDoItems addObject:item2];
-    
-    atsToDoItem *item3 = [[atsToDoItem alloc] init];
-    item3.itemName = @"Read a book";
-    [self.toDoItems addObject:item3];
-}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,8 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.toDoItems = [[NSMutableArray alloc] init];
-    [self loadInitialData];
+
     // Do any additional setup after loading the view.
 }
 
@@ -52,6 +37,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation
