@@ -177,6 +177,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="doneButton" destination="aeg-ch-QdL" id="fL7-Nf-XAV"/>
+                        <outlet property="textField" destination="FiD-X9-rcI" id="KGI-2r-8OU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvE-jI-SGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0nD-nD-c5m" userLabel="Exit" sceneMemberID="exit"/>

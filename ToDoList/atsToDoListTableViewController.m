@@ -8,6 +8,8 @@
 
 #import "atsToDoItem.h"
 #import "atsToDoListTableViewController.h"
+#import "atsAddToDoItemViewController.h"
+
 
 @interface atsToDoListTableViewController ()
 
@@ -18,7 +20,12 @@
 @implementation atsToDoListTableViewController
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
-    
+    atsAddToDoItemViewController *source = [segue sourceViewController];
+    atsToDoItem * item = source.toDoItem;
+    if (item != nil) {
+        [self.toDoItems addObject:item];
+        [self.tableView reloadData];
+    }
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
